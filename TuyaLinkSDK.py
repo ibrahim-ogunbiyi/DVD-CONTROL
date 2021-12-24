@@ -10,9 +10,9 @@ import time
  # Define the serial port and baud rate.
 ser = serial.Serial('COM22', 115200)	#ENTER YOUR PORT
 
-client = TuyaClient(productid='j62naag6ueueoxfb',
-                    uuid='tuyaf378a02c541ece74',
-                    authkey='ohxoG5glRDnaamH2c0P1q2Uq7sUot4sT')
+client = TuyaClient(productid='Your PID',
+                    uuid='Your uuid',
+                    authkey='Your auth key')
 #ENTER YOUR CORRESPONDING DETAILS
 
 def on_connected():
