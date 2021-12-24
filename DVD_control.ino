@@ -113,12 +113,12 @@ void loop() {
       IrSender.sendNEC(0xF00FFF00, 0xF, 32);
       delay((RECORD_GAP_MICROS / 1000) + 5);
    }
-   if  (incomingByte == "V+" || incomingByte == "v-"){ // Volume Up
+   if  (incomingByte == 'V' || incomingByte == 'v'){ // Volume Up
       Serial.println("Sending..");
       IrSender.sendNEC(0xED12FF00, 12, 32);
       delay((RECORD_GAP_MICROS / 1000) + 5);
    }
-   if  (incomingByte == "V+" || incomingByte == "v-"){ // Volume down
+   if  (incomingByte == 'X' || incomingByte == 'x'){ // Volume down
       Serial.println("Sending..");
       IrSender.sendNEC(0xAE51FF00, 51, 32);
       delay((RECORD_GAP_MICROS / 1000) + 5);
